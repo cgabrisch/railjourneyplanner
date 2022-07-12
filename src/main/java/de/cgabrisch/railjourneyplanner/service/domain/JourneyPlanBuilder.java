@@ -6,13 +6,13 @@ import java.util.Objects;
 
 import de.cgabrisch.railjourneyplanner.service.domain.JourneyPlan.Section;
 
-public class JourneyPlanBuilder {
+class JourneyPlanBuilder {
     
-    public static JourneyPlanBuilder journeyPlan() {
+    static JourneyPlanBuilder journeyPlan() {
         return new JourneyPlanBuilder();
     }
     
-    public class SectionBuilder {
+    class SectionBuilder {
         private final String routeId;
         private String fromStation;
 
@@ -20,13 +20,13 @@ public class JourneyPlanBuilder {
             this.routeId = Objects.requireNonNull(routeId);
         }
         
-        public SectionBuilder from(String fromStation) {
+        SectionBuilder from(String fromStation) {
             this.fromStation = Objects.requireNonNull(fromStation, "fromStation must not be null in section of JourneyPlan");
             
             return this;
         }
         
-        public JourneyPlanBuilder to(String toStation) {
+        JourneyPlanBuilder to(String toStation) {
             Objects.requireNonNull(toStation, "toStation must not be null in section of JourneyPlan");
             Objects.requireNonNull(this.fromStation, "fromStation must not be null in section of JourneyPlan");
             
@@ -39,11 +39,11 @@ public class JourneyPlanBuilder {
 
     private final List<Section> sections = new LinkedList<>();
     
-    public SectionBuilder take(String routeId) {
+    SectionBuilder take(String routeId) {
         return new SectionBuilder(routeId);
     }
 
-    public JourneyPlan toJourneyPlan() {
+    JourneyPlan toJourneyPlan() {
         return new JourneyPlan(this.sections);
     }
 }

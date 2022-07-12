@@ -1,0 +1,6 @@
+{
+    "routeId": "Route 2",
+    "fromStation": "City_X",
+    "toStation": "City_Y",
+    "viaStations": ["City_B"]
+}

@@ -5,9 +5,14 @@ import static de.cgabrisch.railjourneyplanner.service.domain.JourneyPlanBuilder.
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
 public class PlannerService {
     private final RouteRepository routeRepository;
 
+    @Autowired
     public PlannerService(RouteRepository routeRepository) {
         this.routeRepository = routeRepository;
     }

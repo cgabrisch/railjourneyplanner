@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class RouteRepository {
     private final Map<String, Route> routesById = new HashMap<>();
     private final Map<String, List<Route>> routesByStation = new HashMap<>();

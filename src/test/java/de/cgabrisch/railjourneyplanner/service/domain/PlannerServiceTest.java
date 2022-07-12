@@ -1,16 +1,22 @@
 package de.cgabrisch.railjourneyplanner.service.domain;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import java.util.Collections;
+import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class PlannerServiceTest {
     private RouteRepository routeRepository;
+    private PlannerService plannerService;
+    private List<JourneyPlan> journeyPlans;
     
     @BeforeEach
     void setup() {
         this.routeRepository = new RouteRepository();
+        this.plannerService = new PlannerService(this.routeRepository);
+        this.journeyPlans = Collections.emptyList();
     }
 
     @Test
@@ -25,11 +31,11 @@ class PlannerServiceTest {
     }
 
     private void whenPlanningJourney(String fromStation, String toStation) {
-
+        this.journeyPlans = this.plannerService.getJourneyPlans(fromStation, toStation);
     }
 
     private void thenFinds(JourneyPlanBuilder journeyPlanBuilder) {
-        fail("Not yet implemented");
+        Assertions.assertTrue(this.journeyPlans.contains(journeyPlanBuilder.toJourneyPlan()));
     }
 
     private RouteBuilder route(String routeId, String fromStation, String toStation) {

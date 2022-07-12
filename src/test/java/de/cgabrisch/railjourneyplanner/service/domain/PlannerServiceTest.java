@@ -1,5 +1,8 @@
 package de.cgabrisch.railjourneyplanner.service.domain;
 
+import static de.cgabrisch.railjourneyplanner.service.domain.JourneyPlanBuilder.journeyPlan;
+import static de.cgabrisch.railjourneyplanner.service.domain.RouteBuilder.route;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -36,13 +39,5 @@ class PlannerServiceTest {
 
     private void thenFinds(JourneyPlanBuilder journeyPlanBuilder) {
         Assertions.assertTrue(this.journeyPlans.contains(journeyPlanBuilder.toJourneyPlan()));
-    }
-
-    private RouteBuilder route(String routeId, String fromStation, String toStation) {
-        return new RouteBuilder(routeId, fromStation, toStation);
-    }
-    
-    private JourneyPlanBuilder journeyPlan() {
-        return new JourneyPlanBuilder();
     }
 }

@@ -7,6 +7,11 @@ import java.util.Objects;
 import de.cgabrisch.railjourneyplanner.service.domain.JourneyPlan.Section;
 
 public class JourneyPlanBuilder {
+    
+    public static JourneyPlanBuilder journeyPlan() {
+        return new JourneyPlanBuilder();
+    }
+    
     public class SectionBuilder {
         private final String routeId;
         private String fromStation;

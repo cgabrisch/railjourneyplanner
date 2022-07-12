@@ -1,4 +1,4 @@
-package de.cgabrisch.railjourneyplanner.service.domain;
+package de.cgabrisch.railjourneyplanner.service.routes.domain;
 
 import static java.util.Objects.requireNonNull;
 

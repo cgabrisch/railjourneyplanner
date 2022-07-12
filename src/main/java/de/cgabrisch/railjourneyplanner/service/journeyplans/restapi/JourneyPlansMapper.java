@@ -1,11 +1,11 @@
-package de.cgabrisch.railjourneyplanner.service.restapi.journeyplans;
+package de.cgabrisch.railjourneyplanner.service.journeyplans.restapi;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
-import de.cgabrisch.railjourneyplanner.service.domain.JourneyPlan;
+import de.cgabrisch.railjourneyplanner.service.journeyplans.domain.JourneyPlan;
 
 @Service
 class JourneyPlansMapper {

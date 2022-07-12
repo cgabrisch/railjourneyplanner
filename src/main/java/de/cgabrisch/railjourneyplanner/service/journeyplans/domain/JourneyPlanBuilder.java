@@ -1,10 +1,10 @@
-package de.cgabrisch.railjourneyplanner.service.domain;
+package de.cgabrisch.railjourneyplanner.service.journeyplans.domain;
 
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Objects;
 
-import de.cgabrisch.railjourneyplanner.service.domain.JourneyPlan.Section;
+import de.cgabrisch.railjourneyplanner.service.journeyplans.domain.JourneyPlan.Section;
 
 class JourneyPlanBuilder {
     

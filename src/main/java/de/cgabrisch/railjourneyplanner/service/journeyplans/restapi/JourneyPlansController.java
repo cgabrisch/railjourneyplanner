@@ -1,4 +1,4 @@
-package de.cgabrisch.railjourneyplanner.service.restapi.journeyplans;
+package de.cgabrisch.railjourneyplanner.service.journeyplans.restapi;
 
 import java.util.List;
 
@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.cgabrisch.railjourneyplanner.service.domain.JourneyPlan;
-import de.cgabrisch.railjourneyplanner.service.domain.PlannerService;
+import de.cgabrisch.railjourneyplanner.service.journeyplans.domain.JourneyPlan;
+import de.cgabrisch.railjourneyplanner.service.journeyplans.domain.PlannerService;
 
 @RestController
 class JourneyPlansController {

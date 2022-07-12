@@ -1,7 +1,7 @@
-package de.cgabrisch.railjourneyplanner.service.domain;
+package de.cgabrisch.railjourneyplanner.service.journeyplans.domain;
 
-import static de.cgabrisch.railjourneyplanner.service.domain.JourneyPlanBuilder.journeyPlan;
-import static de.cgabrisch.railjourneyplanner.service.domain.RouteBuilder.route;
+import static de.cgabrisch.railjourneyplanner.service.journeyplans.domain.JourneyPlanBuilder.journeyPlan;
+import static de.cgabrisch.railjourneyplanner.service.routes.domain.RouteBuilder.route;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Collections;
@@ -10,6 +10,9 @@ import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import de.cgabrisch.railjourneyplanner.service.routes.domain.RouteBuilder;
+import de.cgabrisch.railjourneyplanner.service.routes.domain.RouteRepository;
 
 class PlannerServiceTest {
     private RouteRepository routeRepository;

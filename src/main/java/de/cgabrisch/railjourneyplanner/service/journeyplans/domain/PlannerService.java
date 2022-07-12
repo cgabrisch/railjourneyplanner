@@ -1,12 +1,14 @@
-package de.cgabrisch.railjourneyplanner.service.domain;
+package de.cgabrisch.railjourneyplanner.service.journeyplans.domain;
 
-import static de.cgabrisch.railjourneyplanner.service.domain.JourneyPlanBuilder.journeyPlan;
+import static de.cgabrisch.railjourneyplanner.service.journeyplans.domain.JourneyPlanBuilder.journeyPlan;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import de.cgabrisch.railjourneyplanner.service.routes.domain.RouteRepository;
 
 @Service
 public class PlannerService {

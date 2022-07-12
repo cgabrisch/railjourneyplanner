@@ -1,4 +1,4 @@
-package de.cgabrisch.railjourneyplanner.service.restapi.routes;
+package de.cgabrisch.railjourneyplanner.service.routes.restapi;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package de.cgabrisch.railjourneyplanner.service.domain;
+package de.cgabrisch.railjourneyplanner.service.routes.domain;
 
-import static de.cgabrisch.railjourneyplanner.service.domain.RouteBuilder.route;
+import static de.cgabrisch.railjourneyplanner.service.routes.domain.RouteBuilder.route;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Collections;

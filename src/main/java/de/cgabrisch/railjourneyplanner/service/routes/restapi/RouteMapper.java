@@ -1,9 +1,9 @@
-package de.cgabrisch.railjourneyplanner.service.restapi.routes;
+package de.cgabrisch.railjourneyplanner.service.routes.restapi;
 
 import org.springframework.stereotype.Service;
 
-import de.cgabrisch.railjourneyplanner.service.domain.Route;
-import de.cgabrisch.railjourneyplanner.service.domain.RouteBuilder;
+import de.cgabrisch.railjourneyplanner.service.routes.domain.Route;
+import de.cgabrisch.railjourneyplanner.service.routes.domain.RouteBuilder;
 
 @Service
 class RouteMapper {

@@ -1,12 +1,12 @@
-package de.cgabrisch.railjourneyplanner.service.restapi.routes;
+package de.cgabrisch.railjourneyplanner.service.routes.restapi;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import de.cgabrisch.railjourneyplanner.service.domain.Route;
-import de.cgabrisch.railjourneyplanner.service.domain.RouteRepository;
+import de.cgabrisch.railjourneyplanner.service.routes.domain.Route;
+import de.cgabrisch.railjourneyplanner.service.routes.domain.RouteRepository;
 
 @RestController
 class RoutesController {
